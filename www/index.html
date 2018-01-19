@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1,
+         user-scalable=no, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Simple Hue Driver</title>
+    </head>
+    <body>
+        <div id="app_name">
+            <h1>Simple Hue Driver</h1>
+        </div>
+        <div id="bridge_ip">
+            <form>
+		Hue Bridge IP : <input type="text" name="hue_br_ip" id="hue_br_ip">
+		<br># of Hue Lamps : <input type="text" size="3" name="num_hue" id="num_hue">
+		<br># of Lighting Steps : <input type="text" size="3" name="num_step" id="num_step">
+            </form>
+            <br>
+            <button id="setup_button">Setup</button>
+        </div>
+        <div id="statusDiv"></div>
+        <div id="steps">
+            <p>Lighting Step</p>
+            <div>
+                <button id="play_button" >Play</button>
+                <button id="pause_button" disabled>Pause</button>
+            </div>
+            <ol id="stepList">
+                <li>Steps...</li>
+		<li>
+		<input type="checkbox" name="power0">
+		<input type="checkbox" name="power1">
+		<input type="checkbox" name="power2">
+		</li>
+            </ul>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
